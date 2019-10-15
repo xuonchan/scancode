@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+<img id="wechat-url" src="" />
+<script type="text/javascript">
+if(navigator.userAgent.match(/Alipay/i)) {
+	window.location.href = "https://qr.alipay.com/fkx04879vlgldmq8dvhypd3";
+} else if(navigator.userAgent.match(/MicroMessenger\//i)) {
+	document.getElementById("wechat-url").src = "/wx.jpg";
+} else {
+	alert("请使用微信 或 支付宝扫码支付");
+}
+</script>
+</body>
+</html>
